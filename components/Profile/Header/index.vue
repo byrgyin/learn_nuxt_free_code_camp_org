@@ -3,7 +3,10 @@
 </script>
 
 <template>
-<div>Profile Header</div>
+<div>
+  <span>Profile Header</span>
+  <ProfileHeaderAvatar/>
+</div>
 </template>
 
 <style scoped>

@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  <div>events</div>
+  <div class="ProfileHeader">
+    Avatar Profile Header
+  </div>
 </template>
 
 <style scoped>
