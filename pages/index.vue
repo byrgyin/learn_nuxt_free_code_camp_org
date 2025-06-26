@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import {useCounterStore} from "~/stores/myStore";
-const store = useCounterStore();
-console.log(store);
+const { data: products, pending } = await useLazyFetch('/api/products');
 </script>
 
 <template>
   <div class='main'>
-
+    <h1>I bottom loading</h1>
+    <div>
+    <h3>{{ pending ? "Loading" : products }}</h3>
+    </div>
   </div>
   <calculate/>
 </template>
